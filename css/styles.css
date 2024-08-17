@@ -1,0 +1,486 @@
+/* 基本スタイル（デスクトップ向け） */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #222222;
+    background-color: #fff;
+    line-height: 2;
+}
+
+h1, h2, h3 {
+    font-size: 24px; /* 英語タイトル */
+}
+.jp-title {
+    font-size: 18px; /* 日本語タイトル */
+}
+p {
+    margin: 0;
+    font-size: 16px; /* 本文 */
+}
+
+.black {
+    color: #222222;
+}
+.yellow {
+    color: #ffd61a;
+}
+.gray-bg {
+    background-color: #fafafa;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;/*両端に配置*/
+    padding-left: 50px;  /* 左側のパディングを20pxに設定 */
+    background-color: white;
+    align-items: center;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px; /* ナビのフォントサイズ */
+    color: #222222;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover {
+    background-color: #ffd61a;
+    color: white;
+    border-radius: 5px;
+}
+
+#main-visual {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    background: url('../img/mainbg.png') no-repeat center center/cover;
+    text-align: center;
+    color: white;
+}
+
+#main-visual .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#main-visual h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#main-visual p {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+}
+
+section {
+    text-align: center;
+}
+
+section h2 {
+    font-size: 24px;
+    color: #ffd61a;
+    margin-bottom: 30px;
+}
+
+section h3 {
+    font-size: 24px;
+    margin-top: 120px;
+    margin-bottom: 40px;
+}
+
+section p {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+#about {
+    background-color: #fff;
+    margin-top: 60px;
+}
+
+#about h3 {
+    background-color: #fff;
+    margin-top: 60px;
+}
+
+#about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#about p:last-of-type {
+    margin-bottom: 80px; /* 最後のパラグラフの下部に80pxのマージンを追加 */
+}
+
+/* 画像を画面いっぱいに表示するスタイル */
+.about-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Courseセクション */
+#courses {
+    text-align: center;
+    margin-top: 60px;
+}
+
+#courses p {
+    max-width: 800px;
+    margin: 0 auto 1em;
+}
+
+#courses h2 {
+    font-size: 24px; /* 英語タイトル */
+    color: #222222;
+    margin-bottom: 50px;
+}
+
+.course-about {
+    margin-bottom: 60px;
+}
+
+.course-container {
+    display: flex;
+    flex-direction: column;
+    max-width: full;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.course-text {
+    text-align: left;
+    max-width:480px;
+}
+
+.course-box {
+    display: flex;
+    flex-direction: row;
+    background-color: #fafafa;
+}
+
+.course-box img {
+    width: 50%; /* 画像の幅を50%に設定 */
+    height: auto;
+    margin-bottom: 0; /* 画像の下マージンをリセット */
+}
+
+.course-box .course-text {
+    width: 50%; /* テキストの幅を50%に設定 */
+    margin-left: 50px; /* 画像とテキストの間に20pxのマージンを追加 */
+}
+
+/* 左配置のスタイル */
+.course-box.course-left img {
+    order: 1; /* 画像を左に配置 */
+}
+
+.course-box.course-left .course-text {
+    order: 2; /* テキストを右に配置 */
+    margin-left: 50px; /* 左配置のテキストにマージンを追加 */
+}
+
+/* 右配置のスタイル */
+.course-box.course-right {
+    flex-direction: row-reverse; /* 要素の並びを逆にする */
+}
+
+.course-box.course-right .course-text {
+    order: 1; /* テキストを左に配置 */
+    margin-right: 50px; /* 右配置のテキストにマージンを追加 */
+}
+
+.course-box.course-right .course-text {
+    width: 50%;
+}
+
+.course-box h3 {
+    font-size: 24px; /* 日本語タイトル */
+    color: #222222;
+    margin-bottom: 20px;
+}
+
+.course-box p {
+    font-size: 16px; /* 本文 */
+    color: #555555;
+}
+
+/* NEWSセクション */
+#news {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#news h2 {
+    font-size: 24px; /* 英語タイトル */
+    color: #ffd61a;
+    margin-bottom: 20px;
+}
+
+#news p {
+    font-size: 16px; /* 日本語タイトル */
+    margin-bottom: 40px;
+}
+
+.news-container {
+    display: flex;
+    justify-content: center; /* 中央揃え */
+    gap: 20px; /* アイテム間のギャップ */
+}
+
+.news-item {
+    background-color: #fff;
+    width: 300px; /* 各ニュースアイテムの幅 */
+    padding: 20px;
+    text-align: left;
+}
+
+.news-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.news-item .news-date {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 24px;
+    line-height: 0;
+}
+
+.more-button {
+    display: inline-block;
+    padding: 15px; /* パディングを調整 */
+    background-color: #ffd61a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 300px; /* 幅を指定 */
+    height: 60px; /* 高さを指定 */
+    line-height: 60px; /* ボタン内のテキストの高さを調整 */
+    font-size: 18px; /* フォントサイズを指定 */
+    text-align: center; /* テキストを中央揃え */
+    margin-top: 40px;
+}
+
+.more-button:hover {
+    background-color: #222222;
+    color: white;
+}
+
+
+#access {
+    background-color: #fafafa;
+    padding: 60px;
+}
+
+#access h2 {
+    color: #222222;
+}
+
+#access h3 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
+#access iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin-bottom: 20px;
+}
+
+#access .address-info {
+    max-width: 800px;
+    margin: 60px auto;
+    font-size: 16px;
+    text-align: left;
+}
+
+.address-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.address-label {
+    width: 20%; /* ラベルの幅を指定 */
+}
+
+.address-value {
+    width: 75%; /* 値の幅を指定 */
+}
+
+#contact {
+    background-color: #fff;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 140px;
+}
+
+#contact form {
+    max-width: 640px; /* フォームの最大幅を設定 */
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.form-group label {
+    display: block;
+    width: 110px;
+    min-width: 110px;
+    margin-right: 24px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 400px; /* 入力フィールドとテキストエリアの幅を固定 */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group kikkake {
+    width: 100%;
+}
+
+.form-group-vertical {
+
+    flex-direction: column;
+}
+
+.form-group-vertical label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; /* 各チェックボックス項目の間にスペースを追加 */
+}
+
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea,
+#contact form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#contact form input[type="submit"] {
+    background-color: #ffd61a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 300px;
+    height: 60px;
+    margin: 20px auto;
+    display: block;
+}
+
+#contact form input[type="submit"]:hover {
+    background-color: #222222;
+}
+
+footer {
+    background-color: #707070;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 14px;
+}
+
+
+/* メディアクエリ（タブレット向け） */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #course .course-item div {
+        width: 100%;
+    }
+
+    #news .news-item {
+        width: 100%;
+    }
+
+    #contact form {
+        width: 90%;
+    }
+}
+
+/* メディアクエリ（スマートフォン向け） */
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    #main-visual h1 {
+        font-size: 24px;
+    }
+
+    #main-visual p {
+        font-size: 16px;
+    }
+
+    .news-item, .course {
+        width: 90%; /* ニュースとコースの幅をデバイスに合わせて調整 */
+        margin: 10px auto; /* 自動的に中央揃え */
+    }
+
+    form {
+        width: 90%;
+    }
+}
